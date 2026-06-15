@@ -9,7 +9,10 @@
     "name":"companion_game",
     "path":"companion_game.yyp",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oPlatform",
+    "path":"objects/oPlatform/oPlatform.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

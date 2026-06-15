@@ -10,13 +10,19 @@ view_visible[0] = true;
 
 
 
-camera_width = 1080;
-camera_height = 1080;
+camera_width = 1500 ;
+camera_height = 1500;
 camera_move_speed = .5
 
 camera_info = noone;
 camera = noone;
-zoom = 6
+zoom = 3.3
+
+if(instance_exists(oPlayer)){
+    
+    target = oPlayer 
+    
+}
 
 
 function scr_camera_init(w,h,z,v=0,c=view_camera[0]){

@@ -14,7 +14,9 @@ switch(state){
             {
                 
                 state = PLAYER_STATES.MOVING
-                    
+                target_x = _platform.x 
+                target_y = _platform.y  - _platform.sprite_height / 2
+                   
             }
             
         }
@@ -22,6 +24,18 @@ switch(state){
         break; 
         
          case  PLAYER_STATES.MOVING:
+            
+            if(distance_to_point(target_x,target_y) > 2){
+                
+                    x = lerp(x,target_x,.25)
+                     y = lerp(y,target_y,.25)     
+            }else{
+                x = target_x
+                y = target_y
+                state = PLAYER_STATES.IDLE
+                
+            }
+         
             
         break; 
         
