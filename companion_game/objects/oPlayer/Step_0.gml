@@ -10,10 +10,11 @@ switch(state){
             var _platform = collision_point(mouse_x,mouse_y,oPlatform,false,true)
             
             //theres a platform
-            if(instance_exists(_platform))
+            if(instance_exists(_platform) and _platform != current_platform)
             {
-                
+                current_platform = _platform
                 state = PLAYER_STATES.MOVING
+               
                 target_x = _platform.x 
                 target_y = _platform.y  - _platform.sprite_height / 2
                    
@@ -32,14 +33,33 @@ switch(state){
             }else{
                 x = target_x
                 y = target_y
-                state = PLAYER_STATES.IDLE
                 
+                
+                if(place_meeting(x,y,oGoal)){
+                    state = PLAYER_STATES.SUCCESS
+                        y = oGoal.y - sprite_height
+                        oArrow.visible = false 
+                        image_angle = -90
+                        oGameManager.show_finished_level_items()
+                }else{
+                    state = PLAYER_STATES.IDLE
+                }
             }
          
             
         break; 
         
+        
+        case  PLAYER_STATES.SUCCESS:
+         
+        break; 
+    
+    
          case  PLAYER_STATES.BUSY:
         break; 
     
 }
+
+
+
+

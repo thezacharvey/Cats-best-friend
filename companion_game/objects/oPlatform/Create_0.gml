@@ -1,0 +1,1 @@
+is_starting_platform = false 

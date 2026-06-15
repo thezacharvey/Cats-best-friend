@@ -1,13 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oPlatform",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":11,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oArrow",
+  "eventList":[],
   "managed":true,
-  "name":"oPlatform",
+  "name":"oArrow",
   "overriddenProperties":[],
   "parent":{
     "name":"companion_game",
@@ -31,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_arrow",
+    "path":"sprites/spr_arrow/spr_arrow.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

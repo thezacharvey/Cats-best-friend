@@ -1,13 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oPlatform",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":11,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oGrass",
+  "eventList":[],
   "managed":true,
-  "name":"oPlatform",
+  "name":"oGrass",
   "overriddenProperties":[],
   "parent":{
     "name":"companion_game",
@@ -31,7 +27,13 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
-  "spriteMaskId":null,
+  "spriteId":{
+    "name":"spr_grass1",
+    "path":"sprites/spr_grass1/spr_grass1.yy",
+  },
+  "spriteMaskId":{
+    "name":"spr_grass1",
+    "path":"sprites/spr_grass1/spr_grass1.yy",
+  },
   "visible":true,
 }
