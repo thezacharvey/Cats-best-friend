@@ -1,8 +1,15 @@
 
 
-if(instance_exists(oPlayer)){
+if(instance_exists(oPlayer) ){
         target = oPlayer 
     
+}else{
+    if(instance_exists(oCamLookAt)){
+        target = oCamLookAt
+    }else{
+        target = noone 
+        
+    }
 }
 
 

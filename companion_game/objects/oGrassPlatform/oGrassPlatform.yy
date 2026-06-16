@@ -6,8 +6,8 @@
   "name":"oGrassPlatform",
   "overriddenProperties":[],
   "parent":{
-    "name":"companion_game",
-    "path":"companion_game.yyp",
+    "name":"objects",
+    "path":"folders/objects.yy",
   },
   "parentObjectId":{
     "name":"oPlatform",

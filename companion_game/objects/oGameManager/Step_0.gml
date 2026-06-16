@@ -1,0 +1,33 @@
+
+if(mouse_check_button_pressed(mb_left)){
+        
+    
+    
+    if(room == rm_victory){
+         var _col = collision_point(mouse_x, mouse_y,oNextLevelButton, false, true)
+         if(instance_exists(_col)){
+            go_to_map()
+        }
+        
+    }else if(room == rm_lvl_map){
+        var _col = collision_point(mouse_x, mouse_y,oButtonLevel, false, true)
+        if(instance_exists(_col)){
+            attempt_level_select(_col)
+        }
+        
+        var _col = collision_point(mouse_x, mouse_y,oGoToLevel, false, true)
+        if(instance_exists(_col)){
+            attempt_level_change(_col)
+        }
+    }
+      else{
+          var _col = collision_point(mouse_x, mouse_y,oResetButton, false, true)
+          if(instance_exists(_col)){
+               reset_level()
+          }
+    }
+    
+       
+
+    
+}

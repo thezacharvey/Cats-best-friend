@@ -2,6 +2,7 @@ enum PLAYER_STATES  {
     IDLE, 
     MOVING, 
     BUSY,
+    FAIL, 
     SUCCESS
 }
 
@@ -12,3 +13,4 @@ target_y = y
 state = PLAYER_STATES.IDLE
 current_platform = noone 
 max_moves = 5
+moves_left= max_moves

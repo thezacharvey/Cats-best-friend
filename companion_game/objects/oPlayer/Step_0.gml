@@ -11,7 +11,7 @@ switch(state){
             
             //theres a platform
             if(instance_exists(_platform) and _platform != current_platform)
-            {
+            {   
                 current_platform = _platform
                 state = PLAYER_STATES.MOVING
                
@@ -28,24 +28,47 @@ switch(state){
             
             if(distance_to_point(target_x,target_y) > 2){
                 
-                    x = lerp(x,target_x,.25)
-                     y = lerp(y,target_y,.25)     
+                    if(sprite_index != spr_cat_JUMP)  
+                    {
+                        sprite_index = spr_cat_JUMP
+                    }   
+                var _amt  = .15
+                 x = lerp(x,target_x,_amt)
+                     y = lerp(y,target_y,_amt)     
             }else{
+                
                 x = target_x
                 y = target_y
                 
+                moves_left -- 
                 
                 if(place_meeting(x,y,oGoal)){
                     state = PLAYER_STATES.SUCCESS
                         y = oGoal.y - sprite_height
                         oArrow.visible = false 
                         image_angle = -90
-                        oGameManager.show_finished_level_items()
+                        oGameManager.victory_condtion()
                 }else{
-                    state = PLAYER_STATES.IDLE
+                    //fail
+                    if(moves_left<=0){
+                        state = PLAYER_STATES.FAIL
+                        oGameManager.show_failed_level_items()
+                    }else{
+                        state = PLAYER_STATES.IDLE
+                    }
                 }
             }
          
+            
+        break; 
+    
+       
+        case  PLAYER_STATES.FAIL:
+         //set sprite fail 
+            //sleepy cat 
+            
+            //reset_level
+            
             
         break; 
         
