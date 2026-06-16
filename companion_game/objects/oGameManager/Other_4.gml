@@ -5,7 +5,7 @@ if(room == rm_victory){
                var _star_w = sprite_get_width(spr_score)
               var _anim_time_offset = 0
               var _x = oNextLevelButton.x - (_star_w)
-            
+                
               
               repeat (score) {
           

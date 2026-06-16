@@ -2,6 +2,11 @@
 
 
 score = 0 
+//move score
+low_score = 1 
+silver_score = 3 
+gold_score = 5 
+
 current_level = 1 
 current_room = room 
 max_level = 5
@@ -19,8 +24,19 @@ function max_move_lookup(_cur_level){
     //this dicates the scoring. 
     switch (_cur_level) {
     	case 1:
+            low_score = -1 
+            silver_score = -2
+            gold_score = 1
+            
             _m_moves = 5 
         break; 
+      case 2:
+            low_score = -1 
+            silver_score = -1 
+            gold_score = 0 
+            
+            _m_moves = 5 
+        break;
           default:
         break _m_moves = 5
     }
@@ -44,8 +60,16 @@ function attempt_level_select(_btn){
         selected_lvl = selected_btn.lvl
         selected_btn.is_chosen = true 
         
+        
+        
+        var _x = x 
+        var _y = y 
+        if(instance_exists(oIslandMap )){
+            _x = oIslandMap.x 
+            _y =  oIslandMap.y + oIslandMap.sprite_height / 2 + 50  
+        }
        
-        var _inst = instance_create_depth(x,y,depth, oGoToLevel)
+        var _inst = instance_create_depth(_x,_y,depth, oGoToLevel)
         with(_inst){
             target_lvl = other.selected_btn.lvl 
         }
@@ -73,12 +97,18 @@ function attempt_level_change(_go){
     var _lvl = _go.target_lvl
     switch(_lvl){
         case 1:
-                 selected_btn = noone
+                selected_btn = noone
                room_goto(rm_lev_1 )
             break 
         case 2:
            selected_btn = noone
             room_goto(rm_lev_2)
+            
+        break 
+    
+     case 3:
+           selected_btn = noone
+            room_goto(rm_lev_3)
             
         break 
     }
@@ -98,17 +128,14 @@ function reset_level(){
         
         oPlayer.max_moves = _m_moves
         oPlayer.moves_left = _m_moves
-        with(oPlatform){
-            if(is_starting_platform){
-                other.starting_platform = id 
-            }
-        }
         
-   
+        
     with(oPlatform){
         
         if(is_starting_platform){
             other.starting_platform = id 
+            image_xscale = 1 
+            image_yscale = 1 
         }
         
     }
@@ -126,11 +153,29 @@ function reset_level(){
 
 function victory_condtion(){
     
-    score = floor((oPlayer.max_moves / oPlayer.moves_left) * 3)
-if(current_level == 1){
-        score = 3 
+    
+   //score =  oGameManager.max_moves / oPlayer.max_moves
+    
+   // show_message (score)
+    score = 0 
+    
+    var _m_left = oPlayer.moves_left 
+    
+    if(_m_left == low_score){
+        score = 1 
+    }else if(_m_left >= low_score and _m_left <= gold_score){
+        score = 2 
+    }else{
+        //perfect score
+        score = 3
     }
-    room_goto(rm_victory)
+    
+    score = clamp(score, 0,3)
+    
+     if(current_level == 1){
+            score = 3 
+        }
+        room_goto(rm_victory)
 }
 
 function show_finished_level_items(){
@@ -141,8 +186,7 @@ function show_finished_level_items(){
     var _anim_time_offset = 0
     var _x = oPlayer.x - (_star_w)
   
-    score = clamp (score, 0, 3 )
-    
+ 
     
     repeat (score) {
 
