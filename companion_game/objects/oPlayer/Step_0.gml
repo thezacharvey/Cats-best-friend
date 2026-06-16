@@ -21,7 +21,8 @@ switch(state){
             //theres a platform
             if(instance_exists(_platform) and _platform != current_platform and distance_to_point(_platform.x, _platform.y) < 1200)
             {   
-                current_platform = _platform
+                 prev_platform = current_platform 
+                 current_platform = _platform
               
                   
                 
@@ -39,12 +40,15 @@ switch(state){
          case  PLAYER_STATES.MOVING:
             
             if(distance_to_point(target_x,target_y) > 2){
-                
-                    if(sprite_index != spr_cat_JUMP)  
+                 var _amt  = og_mve_spd
+                    if(sprite_index != spr_cat_JUMP and sprite_index != spr_cat_hurt)  
                     {
                         sprite_index = spr_cat_JUMP
                     }   
-                 var _amt  = .15
+                    if(sprite_index == spr_cat_hurt){
+                        _amt = hurt_mve_spd
+                    }
+                
                      x = lerp(x,target_x,_amt)
                      y = lerp(y,target_y,_amt)     
             }else{
@@ -68,7 +72,19 @@ switch(state){
                         state = PLAYER_STATES.FAIL
                         oGameManager.show_failed_level_items()
                     }else{
-                        state = PLAYER_STATES.IDLE
+                        var _water_plat = collision_point(x,y,oWaterPlatform, false, true)
+                        
+                        if(instance_exists(_water_plat) and prev_platform != noone){
+                            //in water
+                            sprite_index = spr_cat_hurt
+                            target_x = prev_platform.x 
+                            target_y = prev_platform.y  -prev_platform.sprite_height / 2
+                            state = PLAYER_STATES.MOVING
+                            exit 
+                        }else{
+                            state = PLAYER_STATES.IDLE
+                        }
+                        
                     }                        
                 }
                 

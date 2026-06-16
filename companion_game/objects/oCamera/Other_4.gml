@@ -20,3 +20,4 @@ surface_resize(application_surface,camera_width,camera_height)
 */
 
 cam_setup();
+

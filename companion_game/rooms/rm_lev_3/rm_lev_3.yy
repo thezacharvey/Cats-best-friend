@@ -66,8 +66,8 @@
   ],
   "name":"rm_lev_3",
   "parent":{
-    "name":"companion_game",
-    "path":"companion_game.yyp",
+    "name":"rms",
+    "path":"folders/rms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
