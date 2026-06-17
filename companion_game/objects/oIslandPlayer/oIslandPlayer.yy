@@ -1,17 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"oPlayerWin",
+  "%Name":"oIslandPlayer",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":5,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oPlayerWin",
+  "name":"oIslandPlayer",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/objects.yy",
+    "name":"companion_game",
+    "path":"companion_game.yyp",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,12 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_cat_happy",
-    "path":"sprites/spr_cat_happy/spr_cat_happy.yy",
+    "name":"spr_island_player",
+    "path":"sprites/spr_island_player/spr_island_player.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_cat_happy",
-    "path":"sprites/spr_cat_happy/spr_cat_happy.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }

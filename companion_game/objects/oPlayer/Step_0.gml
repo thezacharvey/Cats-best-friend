@@ -23,8 +23,15 @@ switch(state){
             {   
                  prev_platform = current_platform 
                  current_platform = _platform
-              
-                  
+                
+                
+                
+                
+                var _pitch = random_range(1 , 5)
+                if(!audio_is_playing(snd_grass)){
+                    audio_play_sound(snd_grass,2,false,,,_pitch)
+                }
+                
                 
                 state = PLAYER_STATES.MOVING
                
@@ -98,6 +105,9 @@ switch(state){
          //set sprite fail 
             //sleepy cat 
             sprite_index = spr_cat_sleep
+             if(!audio_is_playing(snd_cat_purr)){
+                    audio_play_sound(snd_cat_purr,2,true)
+                }
             //reset_level
             
             

@@ -36,10 +36,27 @@ if(room == rm_victory){
     }
     
     
+}else{
+    
+    //level
+   
+      with(oPlatform){
+         
+         if(is_starting_platform){
+             other.starting_platform = id 
+         }
+     }
+     if(instance_exists(starting_platform) and instance_exists(oPlayer)){
+         oPlayer.x = starting_platform.x 
+         oPlayer.y = starting_platform.y - starting_platform.sprite_height / 2
+         
+        
+     } 
 }
 
 
 if (room != rm_victory && room != rm_lvl_map) {
     score = 0; 
+   
 }
 

@@ -31,7 +31,10 @@ function max_move_lookup(_cur_level){
 
 function attempt_level_select(_btn){
      selected_btn = _btn 
-     if(instance_exists(oGoToLevel)){
+        if(instance_exists(oIslandPlayer)){
+            oIslandPlayer.island_move_to_button(selected_btn)
+        } 
+    if(instance_exists(oGoToLevel)){
             instance_destroy(oGoToLevel)
         }
      if(selected_btn.can_go_to_level){
@@ -136,6 +139,10 @@ function attempt_level_change(_go){
 function reset_level(){
     score = 0 
     
+    if(audio_is_playing(snd_cat_purr)){
+        audio_stop_sound(snd_cat_purr)
+    }
+    
     if(instance_exists(oResetButton)){
         instance_destroy(oResetButton)
         
@@ -155,11 +162,19 @@ function reset_level(){
         }
         
     }
+        
     
+        
+        if(!instance_exists(starting_platform)){
+            with(oPlatform){
+                if(is_starting_platform)
+                    other.starting_platform = id 
+            }
+        }
     
             
         oPlayer.x = starting_platform.x 
-        oPlayer.y  =starting_platform.y  - starting_platform. sprite_height / 2 
+        oPlayer.y  =starting_platform.y  - starting_platform.sprite_height / 2 
         
  
     
