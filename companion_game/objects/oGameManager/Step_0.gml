@@ -33,8 +33,8 @@ if(mouse_check_button_pressed(mb_left)){
           var _col = collision_point(mouse_x, mouse_y,oStartButton, false, true)
           if(instance_exists(_col)){
                 
-                oAudioManager.start_bg_music()
-                alarm[2] = 2
+               
+                room_goto(rm_lvl_map)
            
                exit 
           }

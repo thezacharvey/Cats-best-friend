@@ -1,6 +1,6 @@
 
 var _image_x = sin(current_time) 
-show_debug_message(_image_x)
+//show_debug_message(_image_x)
 _image_x = clamp(_image_x,.75,1.5)
 
 image_xscale = _image_x 

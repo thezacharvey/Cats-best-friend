@@ -130,6 +130,17 @@ function attempt_level_change(_go){
             room_goto(rm_lev_3)
             
         break 
+    
+     case 4:
+           selected_btn = noone
+            room_goto(rm_lev_4)
+            
+        break 
+      case 5:
+           selected_btn = noone
+            room_goto(rm_lev_5)
+            
+        break 
     }
     
 }

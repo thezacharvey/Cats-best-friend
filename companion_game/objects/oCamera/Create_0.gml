@@ -78,3 +78,5 @@ function cam_setup(){
 
 }
 
+
+display_set_gui_size(camera_width, camera_height);
