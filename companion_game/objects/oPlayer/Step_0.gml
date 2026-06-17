@@ -45,7 +45,7 @@ switch(state){
         
           //  show_message(distance_to_point(_platform.x, _platform.y))
             //theres a platform
-            if(instance_exists(_platform) and _platform != current_platform and distance_to_point(_platform.x, _platform.y) < 1200)
+            if(instance_exists(_platform) and _platform != current_platform and distance_to_point(_platform.x, _platform.y) < max_jump_distance)
             {   
                  prev_platform = current_platform 
                  current_platform = _platform

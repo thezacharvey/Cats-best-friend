@@ -19,6 +19,12 @@ if(mouse_check_button_pressed(mb_left)){
         if(instance_exists(_col)){
             attempt_level_change(_col)
         }
+        
+         var _col = collision_point(mouse_x, mouse_y,oIsland, false, true){
+              if(instance_exists(_col) and oCamera.target != _col){
+                    oCamera.target = _col 
+             }
+        } 
     }
     
       else{

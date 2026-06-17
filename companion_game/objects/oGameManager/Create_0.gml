@@ -18,7 +18,7 @@ level_data = {
     max_level : 6 , 
     
     lvl_1: {max_moves: 5, high_score: 0 ,  gold_moves_left :3, silver_moves_left : 2, bronze_moves_left: 1, next_level_score_needed: 0},
-    lvl_2: {max_moves: 5, high_score: 0 ,  gold_moves_left :3, silver_moves_left : 2, bronze_moves_left: 1, next_level_score_needed: 3},
+    lvl_2: {max_moves: 6, high_score: 0 ,  gold_moves_left :2, silver_moves_left : 1, bronze_moves_left: 0, next_level_score_needed: 3},
     lvl_3: {max_moves: 5, high_score: 0 ,  gold_moves_left :1, silver_moves_left : 3, bronze_moves_left: 1, next_level_score_needed: 6},
     lvl_4: {max_moves: 5, high_score: 0 ,  gold_moves_left :1, silver_moves_left : 3, bronze_moves_left: 1, next_level_score_needed: 9}
 }
