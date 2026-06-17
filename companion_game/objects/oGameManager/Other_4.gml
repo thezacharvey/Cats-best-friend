@@ -7,7 +7,7 @@ if(room == rm_victory){
               var _x = oNextLevelButton.x - (_star_w)
                 
               
-              repeat (score) {
+              repeat (level_data[$ level_lookup(true)].high_score) {
           
                  var _inst = instance_create_depth(_x,_y,depth, oStar)
                   _inst.time_offset += _anim_time_offset
@@ -36,9 +36,10 @@ if(room == rm_victory){
     }
     
     
-}else{
-    //inside level 
-    score = 0 
-    
+}
+
+
+if (room != rm_victory && room != rm_lvl_map) {
+    score = 0; 
 }
 

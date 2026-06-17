@@ -2,7 +2,7 @@
 
 
 score = 0 
-total_score = score  
+total_score = 0  
 current_room = room 
 max_level = 5
 max_moves = 5 
@@ -15,10 +15,10 @@ level_data = {
     active_level: 1,
     // this is for the map 
     levels_unlocked : 1,
-    max_level : 5 , 
+    max_level : 6 , 
     
-    lvl_1: {max_moves: 5, high_score: 0 ,  gold_moves_left :1, silver_moves_left : 3, bronze_moves_left: 1, next_level_score_needed: 0},
-    lvl_2: {max_moves: 5, high_score: 0 ,  gold_moves_left :5, silver_moves_left : 2, bronze_moves_left: 1, next_level_score_needed: 3},
+    lvl_1: {max_moves: 5, high_score: 0 ,  gold_moves_left :3, silver_moves_left : 2, bronze_moves_left: 1, next_level_score_needed: 0},
+    lvl_2: {max_moves: 5, high_score: 0 ,  gold_moves_left :3, silver_moves_left : 2, bronze_moves_left: 1, next_level_score_needed: 3},
     lvl_3: {max_moves: 5, high_score: 0 ,  gold_moves_left :1, silver_moves_left : 3, bronze_moves_left: 1, next_level_score_needed: 6},
     lvl_4: {max_moves: 5, high_score: 0 ,  gold_moves_left :1, silver_moves_left : 3, bronze_moves_left: 1, next_level_score_needed: 9}
 }
@@ -89,14 +89,16 @@ function go_to_map(){
     
         
     var _current_level_name = level_lookup(true) 
-     show_message(_current_level_name)
-    show_message(_unlocked_lvl_name)
-    show_message(total_score)
+     //show_message(_current_level_name)
+    //show_message(_unlocked_lvl_name)
     
         //we only inc 
-        if(total_score >= level_data [$ _unlocked_lvl_name].next_level_score_needed){
-                  inc_level()      
-        }
+   
+  
+    
+     if(total_score >= level_data [$ _unlocked_lvl_name].next_level_score_needed){
+            inc_level()      
+    }
       
 
    
@@ -107,9 +109,11 @@ function go_to_map(){
 function attempt_level_change(_go){
     
     var _lvl = _go.target_lvl
+      level_data.active_level = _lvl
     switch(_lvl){
         case 1:
                 selected_btn = noone
+              //   level_data.active_level =1 
                room_goto(rm_lev_1 )
             break 
         case 2:
@@ -170,12 +174,14 @@ function victory_condtion(){
     
    // show_message (score)
     
+    score =  0 
+    
     var _m_left = oPlayer.moves_left 
     
     var _current_level_name = level_lookup(true)
   
     
-    
+    var _add_amount = score 
   
     
     
@@ -183,29 +189,40 @@ function victory_condtion(){
         score = 3
     }else if(_m_left  >= level_data[$ _current_level_name].silver_moves_left){
         score = 2 
-    }else if(_m_left  >= level_data[$ _current_level_name].bronze_moves_left){
+    }else if(_m_left  == level_data[$ _current_level_name].bronze_moves_left){
         //perfect score
         score = 1
     }
     
-    score = clamp(score, 0,3)
+    
+    if(level_data.active_level == 1){
+            score = 3 
+    }
+    
+    
+    
+    
+    
+    
+   // score = clamp(score, 0,3)
     
     
     if(level_data[$ _current_level_name].high_score < score){
         //new highscore! 
-        level_data[$ _current_level_name].high_score = score
+        var _score_diff = score - level_data[$ level_lookup(true)].high_score 
+         level_data[$ _current_level_name].high_score = score
         //adds the differnce to the total score
-        var _score_diff = score -   level_data[$ _current_level_name].high_score
-        total_score += _score_diff
+       
+        //
+        _add_amount =  _score_diff
+      
     }
     
-        if(level_data.active_level == 1){
-            score = 3 
+    total_score += _add_amount
+    
           
-        }
-        if(level_data.active_level == level_data.levels_unlocked){
-            total_score += score; 
-        }
+       // if(level_data.active_level == level_data.levels_unlocked){
+           
         room_goto(rm_victory)
 }
 
@@ -234,8 +251,10 @@ function show_finished_level_items(){
 
 function inc_level(){
     
+  
     if(level_data.max_level > level_data.levels_unlocked){
         level_data.levels_unlocked ++
+        
     }
     
     ///TODO 
