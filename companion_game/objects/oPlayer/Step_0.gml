@@ -11,9 +11,20 @@ switch(state){
             sprite_index = spr_cat_idle
         }
             
+              
+            if(moves_left <= 1){
+                my_sleepy.visible = true 
+            }else{
+                my_sleepy.visible = false 
+            }
+            my_sleepy.x  = x
+            my_sleepy.y = y - sprite_height / 2  -20
+            
+            
         if(mouse_check_button_pressed(mb_left)){
             
             
+          
             var _platform = collision_point(mouse_x,mouse_y,oPlatform,false,true)
          
         
@@ -108,6 +119,9 @@ switch(state){
              if(!audio_is_playing(snd_cat_purr)){
                     audio_play_sound(snd_cat_purr,2,true)
                 }
+              my_sleepy.visible = true 
+            my_sleepy.x  = x
+            my_sleepy.y = y - sprite_height / 2  -20
             //reset_level
             
             

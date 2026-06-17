@@ -20,11 +20,31 @@ if(mouse_check_button_pressed(mb_left)){
             attempt_level_change(_col)
         }
     }
+    
       else{
           var _col = collision_point(mouse_x, mouse_y,oResetButton, false, true)
           if(instance_exists(_col)){
                reset_level()
           }
+    }
+    
+    if(room == rm_main_menu){
+        
+          var _col = collision_point(mouse_x, mouse_y,oStartButton, false, true)
+          if(instance_exists(_col)){
+                
+                oAudioManager.start_bg_music()
+                alarm[2] = 2
+           
+               exit 
+          }
+        
+         var _col = collision_point(mouse_x, mouse_y,oExitButton, false, true)
+          if(instance_exists(_col)){
+               game_end()
+               exit 
+          }
+        
     }
     
        

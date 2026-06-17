@@ -10,8 +10,9 @@ if(instance_exists(oGoal) and room != rm_victory and room != rm_lvl_map){
     
     var _view = view_camera[0]
     
+    
     var _xx = (oGoal.x - camera_get_view_x(_view))/ zoom 
-
+ 
     
     var _player_yy = (oGoal.y - camera_get_view_y(_view)) / zoom 
     var h = camera_get_view_height(_view)

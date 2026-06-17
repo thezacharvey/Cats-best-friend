@@ -11,6 +11,4 @@ if(state == "idle"){
         state = "idle"   
     }
     
-    
-    
 }

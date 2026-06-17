@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Object26",
+  "%Name":"oExitButton",
   "eventList":[],
   "managed":true,
-  "name":"Object26",
+  "name":"oExitButton",
   "overriddenProperties":[],
   "parent":{
     "name":"objects",
@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_exit_game",
+    "path":"sprites/spr_exit_game/spr_exit_game.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

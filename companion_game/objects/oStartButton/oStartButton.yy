@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Object23",
+  "%Name":"oStartButton",
   "eventList":[],
   "managed":true,
-  "name":"Object23",
+  "name":"oStartButton",
   "overriddenProperties":[],
   "parent":{
     "name":"objects",
@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_start_game",
+    "path":"sprites/spr_start_game/spr_start_game.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
