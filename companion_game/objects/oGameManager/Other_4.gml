@@ -23,9 +23,11 @@ if(room == rm_victory){
     
 }else if(room == rm_lvl_map){
         
+    
+    
     with(oButtonLevel){
         
-        if(lvl <= other.current_level){
+        if(lvl <= other.level_data.levels_unlocked){
             can_go_to_level = true 
         }else{
             can_go_to_level = false   
@@ -33,6 +35,10 @@ if(room == rm_victory){
         
     }
     
+    
+}else{
+    //inside level 
+    score = 0 
     
 }
 
