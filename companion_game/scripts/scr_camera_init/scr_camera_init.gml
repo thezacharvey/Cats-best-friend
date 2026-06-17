@@ -8,8 +8,9 @@
 ///@param {Real} z zoom
 ///@param {Real} v viewport number
 ///@param {index} c camera
+/// ///@param {Bool} resize_window resize the window
 ///@return {struct}
-function scr_camera_init(w,h,z,v=0,c=view_camera[0]){
+function scr_camera_init(w,h,z,v=0,c=view_camera[0],resize_window = true){
 	
 	
 	
@@ -36,7 +37,10 @@ function scr_camera_init(w,h,z,v=0,c=view_camera[0]){
 
 	camera_set_view_size(_cam,_width * _zoom,_height * _zoom)
 	camera_set_view_pos(_cam,50,_width /2)	
-	window_set_size(_dis_w, _dis_h)
+    if(resize_window){
+        window_set_size(_dis_w, _dis_h)
+    }
+	
 	surface_resize(application_surface,_width,_height)
 	
 	return _cam_info

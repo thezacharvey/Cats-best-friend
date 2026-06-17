@@ -74,7 +74,7 @@ function cam_setup(){
 	
 	
 	
-	center_cam_to_room()
+	//center_cam_to_room()
 
 }
 
