@@ -6,8 +6,8 @@
   "name":"oFish",
   "overriddenProperties":[],
   "parent":{
-    "name":"companion_game",
-    "path":"companion_game.yyp",
+    "name":"objects",
+    "path":"folders/objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite45",
-    "path":"sprites/Sprite45/Sprite45.yy",
+    "name":"spr_noone",
+    "path":"sprites/spr_noone/spr_noone.yy",
   },
   "spriteMaskId":null,
   "visible":true,

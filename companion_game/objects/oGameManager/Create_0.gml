@@ -66,8 +66,8 @@ function attempt_level_select(_btn){
 function show_failed_level_items(){
         
       var _y = oPlayer.y - oPlayer.sprite_height 
-        var _buytton_hieght = 900
-      instance_create_depth(oPlayer.x ,_y - _buytton_hieght,depth, oResetButton)
+        var _button_height = 400
+      instance_create_depth(oPlayer.x ,_y - _button_height / 2,depth, oResetButton)
 }
 
 

@@ -17,8 +17,10 @@ moves_left= max_moves
 og_mve_spd = .15
 hurt_mve_spd = .05
 max_jump_distance= 1200
+
 prev_platform = noone 
 my_sleepy = instance_create_depth(x,y - sprite_height / 2  -20,depth, oSleep)
+my_noise = instance_create_depth(x,y - sprite_height / 2  -20,depth, oNoise)
 my_sleepy.visible = false 
 
 

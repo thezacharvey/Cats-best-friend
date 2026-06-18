@@ -45,24 +45,34 @@ switch(state){
         
           //  show_message(distance_to_point(_platform.x, _platform.y))
             //theres a platform
-            if(instance_exists(_platform) and _platform != current_platform and distance_to_point(_platform.x, _platform.y) < max_jump_distance)
+            if(instance_exists(_platform) and _platform != current_platform)
             {   
-                 prev_platform = current_platform 
-                 current_platform = _platform
                 
                 
-                
-                
-                var _pitch = random_range(1 , 5)
-                if(!audio_is_playing(snd_grass)){
-                    audio_play_sound(snd_grass,2,false,,,_pitch)
+                //can jump
+                if(distance_to_point(_platform.x, _platform.y) < max_jump_distance){
+                          prev_platform = current_platform 
+                          current_platform = _platform
+                         
+                         
+                         
+                         
+                         var _pitch = random_range(1 , 5)
+                         if(!audio_is_playing(snd_grass)){
+                             audio_play_sound(snd_grass,2,false,,,_pitch)
+                         }
+                         
+                         
+                         state = PLAYER_STATES.MOVING
+                        
+                         target_x = _platform.x 
+                         target_y = _platform.y  - _platform.sprite_height / 2
+                             
+                }else{
+                    //too far 
+                    my_noise.start_noise()
+                    
                 }
-                
-                
-                state = PLAYER_STATES.MOVING
-               
-                target_x = _platform.x 
-                target_y = _platform.y  - _platform.sprite_height / 2
                    
             }
             

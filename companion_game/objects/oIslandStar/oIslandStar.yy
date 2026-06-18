@@ -6,8 +6,8 @@
   "name":"oIslandStar",
   "overriddenProperties":[],
   "parent":{
-    "name":"companion_game",
-    "path":"companion_game.yyp",
+    "name":"objects",
+    "path":"folders/objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"empty",
-    "path":"sprites/empty/empty.yy",
+    "name":"spr_star_empty",
+    "path":"sprites/spr_star_empty/spr_star_empty.yy",
   },
   "spriteMaskId":null,
   "visible":true,

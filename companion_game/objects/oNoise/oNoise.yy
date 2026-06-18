@@ -1,16 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"oIslandPlayer",
+  "%Name":"oNoise",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oIslandPlayer",
+  "name":"oNoise",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/objects.yy",
+    "name":"companion_game",
+    "path":"companion_game.yyp",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_island_player",
-    "path":"sprites/spr_island_player/spr_island_player.yy",
+    "name":"spr_noise",
+    "path":"sprites/spr_noise/spr_noise.yy",
   },
   "spriteMaskId":null,
   "visible":true,
