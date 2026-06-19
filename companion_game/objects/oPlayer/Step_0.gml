@@ -36,12 +36,23 @@ switch(state){
             my_sleepy.y = y - sprite_height / 2  -20
             
             
+             var _platform = collision_point(mouse_x,mouse_y,oPlatform,false,true)
+            
+            
+            //this is used for updated visual guide
+            if(instance_exists(_platform) and distance_to_point(_platform.x, _platform.y) < max_jump_distance){
+            
+                   can_jump = true   
+            }else{
+                   can_jump = false 
+            }
+            
         if(mouse_check_button_pressed(mb_left)){
             
             
           
             var _platform = collision_point(mouse_x,mouse_y,oPlatform,false,true)
-         
+            
         
           //  show_message(distance_to_point(_platform.x, _platform.y))
             //theres a platform
@@ -51,7 +62,8 @@ switch(state){
                 
                 //can jump
                 if(distance_to_point(_platform.x, _platform.y) < max_jump_distance){
-                          prev_platform = current_platform 
+                    
+                        prev_platform = current_platform 
                           current_platform = _platform
                          
                          
@@ -70,6 +82,7 @@ switch(state){
                              
                 }else{
                     //too far 
+                    
                     my_noise.start_noise()
                     
                 }

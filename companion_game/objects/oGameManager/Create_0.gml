@@ -9,7 +9,6 @@ max_moves = 5
 starting_platform = noone 
 selected_lvl = noone 
 selected_btn = noone 
-tutorial_seq = noone 
 global.tut_seq = seq_intro
 
 level_data = {

@@ -21,6 +21,7 @@
     {"name":"inst_459DF129","path":"rooms/rm_lvl_map/rm_lvl_map.yy",},
     {"name":"inst_41078309","path":"rooms/rm_lvl_map/rm_lvl_map.yy",},
     {"name":"inst_40B0FC4D","path":"rooms/rm_lvl_map/rm_lvl_map.yy",},
+    {"name":"inst_5853722","path":"rooms/rm_lvl_map/rm_lvl_map.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -44,6 +45,7 @@
         {"$GMRInstance":"v4","%Name":"inst_459DF129","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_459DF129","objectId":{"name":"oButtonLevel9","path":"objects/oButtonLevel9/oButtonLevel9.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5807.0,"y":1821.0,},
         {"$GMRInstance":"v4","%Name":"inst_41078309","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_41078309","objectId":{"name":"oButtonLevel10","path":"objects/oButtonLevel10/oButtonLevel10.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":5496.0,"y":1193.0,},
         {"$GMRInstance":"v4","%Name":"inst_40B0FC4D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_40B0FC4D","objectId":{"name":"oCookieMunster","path":"objects/oCookieMunster/oCookieMunster.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4037.0,"y":1896.0,},
+        {"$GMRInstance":"v4","%Name":"inst_5853722","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5853722","objectId":{"name":"oJukeBok","path":"objects/oJukeBok/oJukeBok.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":880.0,"y":3929.0,},
       ],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_21DC26AB","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_21DC26AB","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_line","path":"sprites/spr_line/spr_line.yy",},"x":2688.0,"y":4896.0,},

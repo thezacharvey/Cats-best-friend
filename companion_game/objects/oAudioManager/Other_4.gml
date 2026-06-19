@@ -1,3 +1,3 @@
-    if(room == rm_lvl_map){
+    if(room == rm_tutorial){
          oAudioManager.start_bg_music()
     }

@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_noone",
-    "path":"sprites/spr_noone/spr_noone.yy",
+    "name":"spr_fish",
+    "path":"sprites/spr_fish/spr_fish.yy",
   },
   "spriteMaskId":null,
   "visible":true,

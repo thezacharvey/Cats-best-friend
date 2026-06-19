@@ -1,9 +1,14 @@
-   if(room  != rm_lvl_map and room != rm_main_menu and room != rm_victory) {
+   if(room  != rm_lvl_map and room != rm_main_menu and room != rm_victory ) {
             zoom = 2.5
         }else{
             zoom = 3.3
      
        }
+
+    if(room == rm_tutorial){
+        
+            zoom = 1
+    }
 
 if(instance_exists(oPlayer) ){
         target = oPlayer 
@@ -20,6 +25,15 @@ if(instance_exists(oPlayer) ){
 
 
 cam_setup();
+
+
+
+    if(room == rm_tutorial){
+        
+           camera_set_view_pos(target.x , target.y , camera)
+    }
+
+
 
 
 /*

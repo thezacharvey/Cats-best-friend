@@ -59,7 +59,7 @@ if(room == rm_victory){
         
     
     if(room == rm_tutorial){    
-            zoom = 2.2
+           
         
          //layer_sequence_get_instance(seq_intro)
     }
