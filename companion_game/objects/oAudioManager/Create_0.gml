@@ -18,6 +18,11 @@ function play_sound_plz(_snd, _pr = 2, _loop = false ,_stop_if_player = true ){
 
 function start_bg_music(){
     
+    
+    ///depreicated
+    return 
+    
+    
      var _snd = bg_music[choose(1,0)]
     if(os_browser == browser_not_a_browser){
         

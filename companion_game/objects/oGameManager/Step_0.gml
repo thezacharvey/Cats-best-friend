@@ -1,3 +1,7 @@
+if(keyboard_check(vk_shift) and keyboard_check_pressed(vk_f7)){
+    global.testing = !global.testing
+}
+
 
 if(mouse_check_button_pressed(mb_left)){
         
@@ -28,6 +32,8 @@ if(mouse_check_button_pressed(mb_left)){
          var _col = collision_point(mouse_x, mouse_y,oIsland, false, true){
               if(instance_exists(_col) and oCamera.target != _col){
                     oCamera.target = _col 
+                    global.active_island = _col 
+                 
              }
         } 
     }
@@ -44,8 +50,12 @@ if(mouse_check_button_pressed(mb_left)){
           var _col = collision_point(mouse_x, mouse_y,oStartButton, false, true)
           if(instance_exists(_col)){
                 
-               
-                room_goto(rm_tutorial)
+                if(global.testing){
+                      room_goto(rm_lvl_map)
+                }else{
+                      room_goto(rm_tutorial)      
+                }
+              
            
                exit 
           }

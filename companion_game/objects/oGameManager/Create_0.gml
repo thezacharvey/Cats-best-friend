@@ -10,6 +10,8 @@ starting_platform = noone
 selected_lvl = noone 
 selected_btn = noone 
 global.tut_seq = seq_intro
+global.testing = false 
+global.active_island = oIslandMap
 
 level_data = {
     
@@ -25,6 +27,12 @@ level_data = {
     lvl_4: {max_moves: 5, high_score: 0 ,  gold_moves_left :1, silver_moves_left : 3, bronze_moves_left: 1, next_level_score_needed: 9},
     lvl_5: {max_moves: 5, high_score: 0 ,  gold_moves_left :1, silver_moves_left : 3, bronze_moves_left: 1, next_level_score_needed: 11},
     lvl_6: {max_moves: 5, high_score: 0 ,  gold_moves_left :1, silver_moves_left : 3, bronze_moves_left: 1, next_level_score_needed: 11},
+    lvl_7: {max_moves: 5, high_score: 0 ,  gold_moves_left :1, silver_moves_left : 3, bronze_moves_left: 1, next_level_score_needed: 11},
+    lvl_8: {max_moves: 5, high_score: 0 ,  gold_moves_left :1, silver_moves_left : 3, bronze_moves_left: 1, next_level_score_needed: 11},
+    lvl_9: {max_moves: 5, high_score: 0 ,  gold_moves_left :1, silver_moves_left : 3, bronze_moves_left: 1, next_level_score_needed: 11},
+    lvl_10: {max_moves: 5, high_score: 0 ,  gold_moves_left :1, silver_moves_left : 3, bronze_moves_left: 1, next_level_score_needed: 11},
+    lvl_11: {max_moves: 5, high_score: 0 ,  gold_moves_left :1, silver_moves_left : 3, bronze_moves_left: 1, next_level_score_needed: 11},
+    
 }
 
 
@@ -145,7 +153,27 @@ function attempt_level_change(_go){
       case 5:
            selected_btn = noone
             room_goto(rm_lev_5)
-            
+        break 
+      case 6:
+            selected_btn = noone
+            room_goto(rm_lev_6)
+        break 
+      case 7:
+            selected_btn = noone
+            room_goto(rm_lev_7)
+        break 
+       case 8:
+            selected_btn = noone
+            room_goto(rm_lev_8)
+        break 
+        case 9:
+            selected_btn = noone
+            room_goto(rm_lev_9)
+        break 
+        //win
+        case 10:
+            selected_btn = noone
+            room_goto(rm_lev_10)
         break 
     }
     

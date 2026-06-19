@@ -6,8 +6,8 @@
   "name":"oWaterPlatform",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/objects.yy",
+    "name":"companion_game",
+    "path":"companion_game.yyp",
   },
   "parentObjectId":{
     "name":"oPlatform",

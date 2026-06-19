@@ -6,6 +6,13 @@ switch(state){
             
             
             
+            var _oDirt = collision_circle(x,y,sprite_width / 2,oDirtTeleporter,false, true)
+            if(instance_exists(_oDirt)){
+                _oDirt.telport()
+                exit 
+            }
+            
+            
                var _fish = collision_point(x,y,oFish, true, true)
             if(instance_exists(_fish)){
                   sprite_index = spr_cat_hurt

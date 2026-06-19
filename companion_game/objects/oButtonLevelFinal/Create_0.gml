@@ -1,5 +1,5 @@
 // Inherit the parent event
 event_inherited();
 
-lvl = 5
+lvl = 10
 
