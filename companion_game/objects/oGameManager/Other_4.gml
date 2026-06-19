@@ -46,12 +46,7 @@ if(room == rm_victory){
              other.starting_platform = id 
          }
      }
-     if(instance_exists(starting_platform) and instance_exists(oPlayer)){
-         oPlayer.x = starting_platform.x 
-         oPlayer.y = starting_platform.y - starting_platform.sprite_height / 2
-         
-        
-     } 
+  
     
     if(back_to_map_btn){
         instance_destroy(back_to_map_btn)

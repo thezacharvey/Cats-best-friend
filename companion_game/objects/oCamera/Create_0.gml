@@ -19,6 +19,12 @@ camera = noone;
 zoom = 3.3
 
 
+var _dis_w = camera_width / 2
+var _dis_h = camera_height / 2 
+
+window_set_size(_dis_w, _dis_h)
+window_center()
+
 global.cam_center_height = 0
 global.cam_center_width = 0
 
@@ -72,7 +78,7 @@ function center_cam_to_room(){
 
 function cam_setup(){
 	
-	camera_info = scr_camera_init(camera_width,camera_height,zoom)
+	camera_info = scr_camera_init(camera_width,camera_height,zoom,,,false)
 	camera = camera_info.cam
 	zoom = camera_info.zoom
 	
