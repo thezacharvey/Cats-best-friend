@@ -19,6 +19,10 @@ if(instance_exists(oGoal) and room != rm_victory and room != rm_lvl_map){
         
 }
 
+if(global.testing){
+    draw_text( 300,50,"test_mode_enabled")
+}
+
 
 if(room == rm_main_menu){
 

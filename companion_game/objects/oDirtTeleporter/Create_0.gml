@@ -1,6 +1,8 @@
 
 
 is_exit = false 
+ teleport_target = noone 
+my_plat = noone 
 
 sprite_index = spr_dirt 
 
@@ -17,11 +19,25 @@ function close_hole(){
 
 
 function telport(){
+      var _platform = noone 
+    
+  
+    
+    if(_teleport_target != noone){
+         
+        
+        var _x  = _teleport_target.x
+        var _y = _teleport_target.y 
+        var _plt = collision_point(_x,_y, oPlatform, false, true)
+        if(instance_exists(_plt)){
+            _platform = _plt
+           // show_message(oPlayer.x - _plt.x )
+        }
+        
+    }
     
     
-      var _platform = teleport_target.my_plat
-    
-    if(teleport_target == noone or is_exit or _platform == noone ){
+    if(_platform == noone){
         return 
     }
     
@@ -29,7 +45,7 @@ function telport(){
 
     
     
-    oPlayer.target_x = _platform.x 
+    oPlayer.target_x= _platform.x 
     oPlayer.target_y = _platform.y 
     oPlayer.state = PLAYER_STATES.MOVING
     //make teleport free to move 

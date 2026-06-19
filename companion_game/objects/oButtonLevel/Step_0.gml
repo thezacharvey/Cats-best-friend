@@ -6,3 +6,7 @@ if(is_chosen){
      image_yscale =1
 }
 
+if(global.testing){
+    can_go_to_level = true 
+}
+

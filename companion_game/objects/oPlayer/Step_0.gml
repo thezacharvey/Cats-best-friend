@@ -9,7 +9,6 @@ switch(state){
             var _oDirt = collision_circle(x,y,sprite_width / 2,oDirtTeleporter,false, true)
             if(instance_exists(_oDirt)){
                 _oDirt.telport()
-                exit 
             }
             
             
