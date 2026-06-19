@@ -21,7 +21,7 @@ if(mouse_check_button_pressed(mb_left)){
         }
         
         var _col = collision_point(mouse_x, mouse_y,oJukeBok, false, true)
-        if(instance_exists(_col)){
+        if(instance_exists(_col) and _col.visible ){
             oJukeBok.inc_music()
         }
         

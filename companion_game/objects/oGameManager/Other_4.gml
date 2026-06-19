@@ -1,3 +1,8 @@
+if(!instance_exists(oMouse)){
+    instance_create_depth(x,y,depth -10000, oMouse)
+       window_set_cursor(cr_none)
+}
+
 if(room == rm_victory){
         
     if(instance_exists(oNextLevelButton)){
@@ -24,6 +29,8 @@ if(room == rm_victory){
 }else if(room == rm_lvl_map){
         
     
+ 
+    
     
     with(oButtonLevel){
         
@@ -39,6 +46,8 @@ if(room == rm_victory){
 }else{
     
     //level
+    
+       window_set_cursor(cr_none)
    
       with(oPlatform){
          
@@ -48,13 +57,8 @@ if(room == rm_victory){
      }
   
     
-    if(back_to_map_btn){
-        instance_destroy(back_to_map_btn)
-    }
-    
-    if(room != rm_main_menu){
-         back_to_map_btn =  instance_create_depth(x,y,depth -1000,oBackToMap)
-    }
+   
+ 
     
         
     

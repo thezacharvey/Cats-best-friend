@@ -42,3 +42,4 @@ function inc_music(){
     if(_snd != noone){
            audio_play_sound(_snd,1,true)
     }
+
