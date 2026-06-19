@@ -18,6 +18,10 @@ camera_info = noone;
 camera = noone;
 zoom = 3.3
 
+
+global.cam_center_height = 0
+global.cam_center_width = 0
+
 if(instance_exists(oPlayer)){
     
     target = oPlayer 

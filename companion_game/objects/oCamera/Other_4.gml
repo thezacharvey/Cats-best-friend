@@ -19,6 +19,9 @@ if(instance_exists(oPlayer) ){
 }
 
 
+
+
+
 /*
 camera_set_view_size(camera,camera_width,camera_height)
 camera_set_view_pos(camera,50,camera_height /2)

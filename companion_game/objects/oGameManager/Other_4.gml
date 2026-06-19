@@ -52,6 +52,15 @@ if(room == rm_victory){
          
         
      } 
+    
+    if(back_to_map_btn){
+        instance_destroy(back_to_map_btn)
+    }
+    
+    if(room != rm_main_menu){
+         back_to_map_btn =  instance_create_depth(x,y,depth -1000,oBackToMap)
+    }
+    
 }
 
 

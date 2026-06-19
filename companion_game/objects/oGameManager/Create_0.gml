@@ -24,6 +24,8 @@ level_data = {
 }
 
 
+back_to_map_btn = noone 
+
 function max_move_lookup(_cur_level){
     
 }

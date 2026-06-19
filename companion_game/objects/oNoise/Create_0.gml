@@ -11,8 +11,11 @@ function start_noise(){
         return 
     }
     
-    x = oPlayer.x +xx_offset
-    y = oPlayer.y - yy_offset
+    
+    //yy_offset  =  -(oPlayer.sprite_height/2) - 100
+    
+    //x = oPlayer.x +xx_offset
+    //y = oPlayer.y - yy_offset
     image_index = 0 
     visible = true 
     noise = 0 
