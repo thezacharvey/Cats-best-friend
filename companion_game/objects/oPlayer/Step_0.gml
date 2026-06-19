@@ -137,9 +137,10 @@ switch(state){
                     }else{
                         var _water_plat = collision_point(x,y,oWaterPlatform, false, true)
                         var _fish = collision_point(x,y,oFish, true, true)
-                        if((instance_exists(_water_plat) or instance_exists(_fish) )and prev_platform != noone ){
+                        if((instance_exists(_water_plat) or instance_exists(_fish) )and prev_platform != noone and    _water_plat.safe_to_land == false ){
                             //in water
                             sprite_index = spr_cat_hurt
+                        
                             if(!audio_is_playing(snd_cat_scared)){
                                       audio_play_sound(snd_cat_scared,1,false)
                             }

@@ -2,6 +2,7 @@ target_x = x
 target_y  = y  
 mve_spd = .15 
 state = "idle"
+active_level = 1
 
 
 function island_move_to_button(_tar_btn){
