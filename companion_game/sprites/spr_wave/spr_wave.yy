@@ -36,8 +36,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"sprites",
-    "path":"folders/sprites.yy",
+    "name":"companion_game",
+    "path":"companion_game.yyp",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
