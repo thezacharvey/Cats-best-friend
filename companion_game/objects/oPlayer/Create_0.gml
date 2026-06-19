@@ -15,10 +15,12 @@ current_platform = noone
 max_moves = 5
 moves_left= max_moves
 og_mve_spd = .15
+nve_spd = og_mve_spd
 hurt_mve_spd = .05
 can_jump = false 
 max_jump_distance= 1200
 place_object = instance_create_depth(x,y,depth -1000,oPlaceArrow)
+tele_port_spd = hurt_mve_spd
 
 prev_platform = noone 
 my_sleepy = instance_create_depth(x,y - sprite_height / 2  -20,depth, oSleep)

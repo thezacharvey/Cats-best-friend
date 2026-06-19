@@ -314,6 +314,9 @@ function inc_level(){
   
     if(level_data.max_level > level_data.levels_unlocked){
         level_data.levels_unlocked ++
+        if(level_data.levels_unlocked == 6 and instance_exists(oCookieIslandUnlock)){
+            oCookieIslandUnlock.show_first_time()
+        }
         
     }
     

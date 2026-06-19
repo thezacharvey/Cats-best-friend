@@ -1,18 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"oGrassPlatform6",
-  "eventList":[],
+  "%Name":"oSailLine",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"oGrassPlatform6",
+  "name":"oSailLine",
   "overriddenProperties":[],
   "parent":{
     "name":"objects",
     "path":"folders/objects.yy",
   },
-  "parentObjectId":{
-    "name":"oWaterPlatform",
-    "path":"objects/oWaterPlatform/oWaterPlatform.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_cookie4",
-    "path":"sprites/spr_cookie4/spr_cookie4.yy",
+    "name":"spr_sailing_line",
+    "path":"sprites/spr_sailing_line/spr_sailing_line.yy",
   },
   "spriteMaskId":null,
   "visible":true,

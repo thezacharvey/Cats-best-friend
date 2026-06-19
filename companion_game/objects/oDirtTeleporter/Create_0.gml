@@ -10,15 +10,14 @@ sprite_index = spr_dirt
 
 
 function close_hole(){
-    if(is_exit){
-        return 
-    }
-    is_exit = true 
     sprite_index = spr_dirt_close
 }
 
 
 function telport(){
+      if(sprite_index== spr_dirt_close){
+        return 
+    }
       var _platform = noone 
     
   
@@ -46,7 +45,7 @@ function telport(){
     
     
     oPlayer.target_x= _platform.x 
-    oPlayer.target_y = _platform.y 
+    oPlayer.target_y = _platform.y - _platform.sprite_height / 2 
     oPlayer.state = PLAYER_STATES.MOVING
     //make teleport free to move 
     oPlayer.moves_left += 1 

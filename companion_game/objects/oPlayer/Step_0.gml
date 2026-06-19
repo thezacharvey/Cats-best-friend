@@ -102,9 +102,10 @@ switch(state){
          case  PLAYER_STATES.MOVING:
             
             if(distance_to_point(target_x,target_y) > 2){
-                 var _amt  = og_mve_spd
+                 var _amt  = nve_spd
                     if(sprite_index != spr_cat_JUMP and sprite_index != spr_cat_hurt)  
                     {
+                        _amt = og_mve_spd
                         sprite_index = spr_cat_JUMP
                     }   
                     if(sprite_index == spr_cat_hurt){
