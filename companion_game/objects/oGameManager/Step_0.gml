@@ -40,7 +40,7 @@ if(mouse_check_button_pressed(mb_left)){
           if(instance_exists(_col)){
                 
                
-                room_goto(rm_lvl_map)
+                room_goto(rm_tutorial)
            
                exit 
           }
@@ -50,6 +50,15 @@ if(mouse_check_button_pressed(mb_left)){
                game_end()
                exit 
           }
+        
+    }
+    
+    else if(room == rm_tutorial){
+           
+          var _col = collision_point(mouse_x, mouse_y,oNextButton, false, true)
+          if(instance_exists(_col) and _col.visible){
+                restart_seq()
+          } 
         
     }
     

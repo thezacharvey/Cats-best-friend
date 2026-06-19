@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Sequence1_Events2",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Sequence1_Events2",
+  "parent":{
+    "name":"companion_game",
+    "path":"companion_game.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

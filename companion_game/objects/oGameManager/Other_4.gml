@@ -20,7 +20,7 @@ if(room == rm_victory){
         
     }
     
-    
+
 }else if(room == rm_lvl_map){
         
     
@@ -56,6 +56,14 @@ if(room == rm_victory){
          back_to_map_btn =  instance_create_depth(x,y,depth -1000,oBackToMap)
     }
     
+        
+    
+    if(room == rm_tutorial){    
+            zoom = 2.2
+        
+         //layer_sequence_get_instance(seq_intro)
+    }
+        
 }
 
 

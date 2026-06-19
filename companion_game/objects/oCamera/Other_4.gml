@@ -19,7 +19,7 @@ if(instance_exists(oPlayer) ){
 }
 
 
-
+cam_setup();
 
 
 /*
@@ -28,5 +28,5 @@ camera_set_view_pos(camera,50,camera_height /2)
 surface_resize(application_surface,camera_width,camera_height)
 */
 
-cam_setup();
+//
 

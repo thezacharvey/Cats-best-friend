@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_goal_idle",
-    "path":"sprites/spr_goal_idle/spr_goal_idle.yy",
+    "name":"spr_scent",
+    "path":"sprites/spr_scent/spr_scent.yy",
   },
   "spriteMaskId":null,
   "visible":true,

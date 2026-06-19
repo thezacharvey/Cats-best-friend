@@ -81,9 +81,6 @@ function cam_setup(){
 	camera_info = scr_camera_init(camera_width,camera_height,zoom,,,false)
 	camera = camera_info.cam
 	zoom = camera_info.zoom
-	
-	
-	
 	//center_cam_to_room()
 
 }
