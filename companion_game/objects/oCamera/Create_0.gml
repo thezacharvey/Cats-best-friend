@@ -17,6 +17,7 @@ camera_move_speed = .5
 camera_info = noone;
 camera = noone;
 zoom = 3.3
+prev_snap_at_first =true 
 
 
 var _dis_w = camera_width / 2

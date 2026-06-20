@@ -3,9 +3,20 @@
 
 if(target != noone ){
 	
-
 	var cam_x = camera_get_view_x(camera) - (camera_width * zoom) / 2 
 	var cam_y = camera_get_view_y(camera) - (camera_height * zoom) /2;
+    
+    
+    if(prev_snap_at_first){
+        var _xx = target.x  - (camera_width * zoom) / 2
+        var _yy = target.y - (camera_height * zoom) /2
+        camera_set_view_pos(camera, _xx,_yy)
+        prev_snap_at_first = false 
+        exit 
+        
+    }
+    
+
 
     
 	var c_x = lerp(cam_x,target.x,camera_move_speed);

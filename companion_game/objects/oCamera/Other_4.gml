@@ -1,4 +1,5 @@
-   if(room  != rm_lvl_map and room != rm_main_menu and room != rm_victory ) {
+prev_snap_at_first =true     
+if(room  != rm_lvl_map and room != rm_main_menu and room != rm_victory ) {
             zoom = 2.5
         }else{
             zoom = 3.3
