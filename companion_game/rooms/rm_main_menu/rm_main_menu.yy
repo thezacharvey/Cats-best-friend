@@ -14,7 +14,6 @@
     {"name":"inst_113A46AA","path":"rooms/rm_main_menu/rm_main_menu.yy",},
     {"name":"inst_2599A88C","path":"rooms/rm_main_menu/rm_main_menu.yy",},
     {"name":"inst_7D003B88","path":"rooms/rm_main_menu/rm_main_menu.yy",},
-    {"name":"inst_9853BA9","path":"rooms/rm_main_menu/rm_main_menu.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -23,7 +22,6 @@
         {"$GMRInstance":"v4","%Name":"inst_1252AA6C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1252AA6C","objectId":{"name":"oStartButton","path":"objects/oStartButton/oStartButton.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2496.0,"y":4764.0,},
         {"$GMRInstance":"v4","%Name":"inst_113A46AA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_113A46AA","objectId":{"name":"oBestfriendsButton","path":"objects/oBestfriendsButton/oBestfriendsButton.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2624.0,"y":4256.0,},
         {"$GMRInstance":"v4","%Name":"inst_2599A88C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2599A88C","objectId":{"name":"oJukeBok","path":"objects/oJukeBok/oJukeBok.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3392.0,"y":6112.0,},
-        {"$GMRInstance":"v4","%Name":"inst_9853BA9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_9853BA9","objectId":{"name":"oCookieIslandUnlock","path":"objects/oCookieIslandUnlock/oCookieIslandUnlock.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":6752.0,},
       ],"layers":[],"name":"Instances_2","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_6763936","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_6763936","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_cats_logo","path":"sprites/spr_cats_logo/spr_cats_logo.yy",},"x":2656.0,"y":3648.0,},

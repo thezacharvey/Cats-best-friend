@@ -24,12 +24,12 @@ level_data = {
     lvl_1: {max_moves: 5, high_score: 0 ,  gold_moves_left :3, silver_moves_left : 2, bronze_moves_left: 1, next_level_score_needed: 0},
     lvl_2: {max_moves: 7, high_score: 0 ,  gold_moves_left :2, silver_moves_left : 1, bronze_moves_left: 0, next_level_score_needed: 3},
     lvl_3: {max_moves: 6, high_score: 0 ,  gold_moves_left :1, silver_moves_left : 0, bronze_moves_left: 0, next_level_score_needed: 5},
-    lvl_4: {max_moves: 8, high_score: 0 ,  gold_moves_left :4, silver_moves_left : 2, bronze_moves_left: 1, next_level_score_needed: 7},
+    lvl_4: {max_moves: 8, high_score: 0 ,  gold_moves_left :3, silver_moves_left : 2, bronze_moves_left: 1, next_level_score_needed: 7},
     lvl_5: {max_moves: 7, high_score: 0 ,  gold_moves_left :2, silver_moves_left : 1, bronze_moves_left: 0, next_level_score_needed: 9},
     lvl_6: {max_moves: 6, high_score: 0 ,  gold_moves_left :2, silver_moves_left : 1, bronze_moves_left: 0, next_level_score_needed: 11},
     lvl_7: {max_moves: 5, high_score: 0 ,  gold_moves_left :2, silver_moves_left : 1, bronze_moves_left: 0, next_level_score_needed: 13},
-    lvl_8: {max_moves: 7, high_score: 0 ,  gold_moves_left :3, silver_moves_left : 2, bronze_moves_left: 1, next_level_score_needed: 15},
-    lvl_9: {max_moves: 7, high_score: 0 ,  gold_moves_left :2, silver_moves_left : 1, bronze_moves_left: 0, next_level_score_needed: 17},
+    lvl_8: {max_moves: 7, high_score: 0 ,  gold_moves_left :2, silver_moves_left : 1, bronze_moves_left: 0, next_level_score_needed: 15},
+    lvl_9: {max_moves: 9, high_score: 0 ,  gold_moves_left :2, silver_moves_left : 1, bronze_moves_left: 0, next_level_score_needed: 17},
     lvl_10: {max_moves: 5, high_score: 0 ,  gold_moves_left :1, silver_moves_left : 3, bronze_moves_left: 1, next_level_score_needed: 19},
     lvl_11: {max_moves: 5, high_score: 0 ,  gold_moves_left :1, silver_moves_left : 3, bronze_moves_left: 1, next_level_score_needed: 11},
     
@@ -314,9 +314,7 @@ function inc_level(){
   
     if(level_data.max_level > level_data.levels_unlocked){
         level_data.levels_unlocked ++
-        if(level_data.levels_unlocked == 6 and instance_exists(oCookieIslandUnlock)){
-            oCookieIslandUnlock.show_first_time()
-        }
+      
         
     }
     
