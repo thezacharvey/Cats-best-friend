@@ -8,7 +8,7 @@ var _plat = collision_point(mouse_x, mouse_y, oPlatform, false ,true )
 if(instance_exists(_plat)){
     
     _xx = _plat.x 
-    _yy = _plat.y - 150
+    _yy = _plat.y - _plat.sprite_height / 2  - 50
     
     if(oPlayer.can_jump){
         sprite_index = spr_land_gree
