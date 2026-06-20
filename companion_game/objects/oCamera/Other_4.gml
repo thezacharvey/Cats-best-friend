@@ -11,6 +11,12 @@ if(room  != rm_lvl_map and room != rm_main_menu and room != rm_victory ) {
             zoom = 1
     }
 
+
+if(room == rm_end){
+    zoom = 3.7
+}
+
+
 if(instance_exists(oPlayer) ){
         target = oPlayer 
      

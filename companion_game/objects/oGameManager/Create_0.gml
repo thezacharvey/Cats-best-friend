@@ -173,7 +173,7 @@ function attempt_level_change(_go){
         //win
         case 10:
             selected_btn = noone
-            room_goto(rm_lev_10)
+            room_goto(rm_end)
         break 
     }
     

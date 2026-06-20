@@ -1,4 +1,4 @@
-if(room == rm_victory){
+if(room == rm_victory or room == rm_end){
     
     sprite_index = spr_goal_yay
 }else{
